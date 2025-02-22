@@ -1,3 +1,4 @@
+import 'package:app1/route_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:app1/theme.dart';
 import 'package:app1/home_page.dart';
@@ -18,11 +19,11 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
-      routes: {
-        '/': (context) => const HomeActivity(),
-        '/second': (context) => const SecondActivity(),
-      },
+      // routes: {
+      //   '/': (context) => const HomeActivity(),
+      //   '/second': (context) => const SecondActivity(),
+      // },
+      onGenerateRoute: RouteManager.generateRoute,
     );
   }
 }
-

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class SecondActivity extends StatelessWidget {
   const SecondActivity({super.key});
 
@@ -20,6 +19,7 @@ class SecondActivity extends StatelessWidget {
         toolbarHeight: 59,
         backgroundColor: Colors.green,
         elevation: 6,
+        automaticallyImplyLeading: false,
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
